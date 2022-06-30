@@ -1,7 +1,29 @@
+from statistics import mean
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import GridSearchCV
+from nltk.stem import WordNetLemmatizer, PorterStemmer
+from nltk.corpus import stopwords
 
-global gs
+
+##
+##
+
+# find the mean word length
+def mean_word_length (string):
+    
+#split the string
+    word_list = [i for i in string.split()]
+
+#remove the characters from the string
+    cleaned_words = []
+    for word in word_list:
+        cleaned_word = ''.join([i for i in word if i.isalpha()])
+        cleaned_words.append(cleaned_word)
+
+    return mean([len(i) for i in cleaned_words])
+
+##
+##
 
 def pipe_grid(pipe_params, grid_params):
     '''
@@ -42,7 +64,10 @@ def pipe_grid_njobs(pipe_params, grid_params):
     
     return gs
 
+##
+##
 
+# I used the NLP Practice breakfast hour as a model for these functions.
 
 def lemmatize_text(text):
     split_text = text.split()
