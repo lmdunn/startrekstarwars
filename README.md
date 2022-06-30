@@ -26,4 +26,5 @@ Star Wars posts are more likely to consist of just a title and no text in the bo
 Post Word Count Image
 
 
-I SHOULD TRY TO RUN THE ANALYSIS OF REMOVED POSTS WITH ALL THE ENGLISH STOP WORDS ELIMINATED
+FURTHER EXPLORATION
+Who's posting on which site? Comparison. Is it diff people or diff appeals that lead to word choice changes
