@@ -1,3 +1,5 @@
+#pycache
+_pycache_
 # Ignore Jupyter Notebook Saves
 .ipynb_checkpoints
 
